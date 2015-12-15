@@ -36,7 +36,6 @@ void read_input(void) {
    char temp[4];
    struct Pixels **pixel_arrayp;
 
-   FILE *BMP_out = fopen("cross_izlaz.bmp", "wb");
    FILE *BMP_in = fopen ("test.bmp", "rb");
    if (BMP_in == NULL){
 
@@ -79,7 +78,6 @@ void read_input(void) {
          fread(&temp, padding, 1,  BMP_in);
       }
    }
-
 
    fclose(BMP_in);
 }
